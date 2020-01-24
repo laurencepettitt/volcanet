@@ -1,0 +1,40 @@
+= Assignment: Volcanoes images classification
+
+== Data
+
+The input data (*train_images.zip* and *test_images.zip*) consist of images of a planet surface taken from orbit having one image chanel with resolution 110x110 pixels.
+Pixel values range from 0 to 255.
+
+The pixel value is related to the amount of energy backscattered to the radar from a given spatial location.
+Higher pixel values indicate greater backscatter.
+Lower pixel values indicate lesser backscatter. Both topography and surface roughness relative to the radar wavelength affect the amount of backscatter.
+
+Images can contain one or more volcanoes or maybe none.
+
+Associated to this are the label data or "ground truth" (*train_labels.csv* and *test_labels.csv*), which contains four columns, described here:
+
+* **Volcano?**: if in the image there are volcanoes (Main target), 1 or 0.
+for Volcano? = 0 this three next features are NaN
+* **Type**: 1 - definitely a volcano, 2 - probably, 3 - possibly, 4 - only a pit is visible
+* **Radius**: is the radius of the volcan in the center of the image, in pixels
+* **Number Volcanoes**: The number of volcanoes in the image
+
+The images that have volcanoes, have one centered on the image. 
+
+The data is unbalanced and that has to be taken account, the number of volcanoes is lower than no volcanoes.
+
+**Missing Values**
+
+Some images contain blank (black) regions which resulted from gaps in the acquisition or communication processes. These regions can generally be ignored.
+
+== Your task
+
+- Create a model that will determine whether an image contains a volcano or not (first column of the provided labels).
+- For images that contain a volcano create a model that will predict the type of the volcano in the image (second column of the labels).
+- Try to optimize classification performance of your models. (Especially for the model that classifies whether an image contains a volcano or not.)
+- Explain your models, results and achieved performance.
+
+
+Even if you have tried something that is not used in the final solution, please try to keep it as well. We are not only interested in the final solution but also in the thought process, reasoning and decisions taken.
+
+We suggest you to use Jupyter notebook for this assignment.
