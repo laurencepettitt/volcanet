@@ -13,10 +13,10 @@ Images can contain one or more volcanoes or maybe none.
 
 Associated to this are the label data or "ground truth" (*train_labels.csv* and *test_labels.csv*), which contains four columns, described here:
 
-* **Volcano?**: if in the image there are volcanoes (Main target), 1 or 0.
-for Volcano? = 0 this three next features are NaN
+* **Volcano?**: presence of volcanoes in the image (Main target), 1 (present) or 0 (none in the image).
+for Volcano? = 0 the next three features are NaN
 * **Type**: 1 - definitely a volcano, 2 - probably, 3 - possibly, 4 - only a pit is visible
-* **Radius**: is the radius of the volcan in the center of the image, in pixels
+* **Radius**: is the radius of the volcano in the center of the image, in pixels
 * **Number Volcanoes**: The number of volcanoes in the image
 
 The images that have volcanoes, have one centered on the image. 
@@ -35,6 +35,6 @@ Some images contain blank (black) regions which resulted from gaps in the acquis
 - Explain your models, results and achieved performance.
 
 
-Even if you have tried something that is not used in the final solution, please try to keep it as well. We are not only interested in the final solution but also in the thought process, reasoning and decisions taken.
+Even if you will have tried something that is not used in the final solution, please keep it as well and rather explaine why you tried that particular technique. We are not only interested in the final solution but also in the thought process, reasoning and decisions taken.
 
-We suggest you to use Jupyter notebook for this assignment.
+We suggest to use Jupyter notebook for this assignment.
