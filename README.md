@@ -11,12 +11,6 @@ pip install -e .
 ```
 
 ## Usage
-### Game
-Try and beat the machines.
-```bash
-python volcanet/game.py
-```
-
 ### Make inferences
 Make predictions from png images in a directory.
 ```bash

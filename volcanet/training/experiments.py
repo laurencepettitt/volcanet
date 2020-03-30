@@ -8,7 +8,7 @@ from volcanet.training import plotting
 from volcanet.training import train
 
 AUTOTUNE = tf.data.experimental.AUTOTUNE
-EPOCHS = 100
+EPOCHS = 15
 BATCH_SIZE = 32
 
 
